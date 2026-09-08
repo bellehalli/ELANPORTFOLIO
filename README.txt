@@ -1,1 +1,0 @@
-Replace your current index.html with this fixed version. Image paths now match the JPG files stored in the repo root.
