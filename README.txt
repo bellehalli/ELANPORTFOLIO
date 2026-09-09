@@ -1,7 +1,15 @@
-ÉLAN RESTORE PACKAGE
+ÉLAN CORRECTED IMAGE-PATH FILES
 
-This restores index.html and fixes image paths.
-Your JPG files remain in the repository root.
-Upload/replace index.html only.
+Replace these exact files in the ROOT of bellehalli/ELANPORTFOLIO:
+- index.html
+- filler.html
+- laser.html
+- results.html
+- toxin.html
+- treatments.html
+- visit.html
 
-This is a recovery file to restore the site from 404.
+The layout/content was preserved. The old placeholder JPG references were replaced
+with the actual JPG filenames already in your GitHub repo.
+
+Verified old placeholder names remaining: NONE
