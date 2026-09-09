@@ -1,15 +1,19 @@
-ÉLAN CORRECTED IMAGE-PATH FILES
+ÉLAN FINAL PORTFOLIO POLISH
 
-Replace these exact files in the ROOT of bellehalli/ELANPORTFOLIO:
-- index.html
-- filler.html
-- laser.html
-- results.html
-- toxin.html
-- treatments.html
-- visit.html
+Replace/upload these files in the repo root.
 
-The layout/content was preserved. The old placeholder JPG references were replaced
-with the actual JPG filenames already in your GitHub repo.
+Core upgrades:
+- working before/after slider
+- working treatment finder
+- working sample-plan builder
+- working provider matcher
+- working results filters
+- polished mobile menu/header states
+- luxury hover/reveal micro-interactions
+- CSS-rendered gift card (removes blurry gift-card image dependency)
+- editorial provider cards instead of faux portrait initials
+- intentional concept-location graphic instead of a substituted map/photo
+- cleaned result/testimonial/location language for portfolio credibility
+- refined financing module
 
-Verified old placeholder names remaining: NONE
+polish.css layers on top of the existing styles.css so the original design remains intact.

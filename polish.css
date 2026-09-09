@@ -1,0 +1,106 @@
+/* ÉLAN FINAL PORTFOLIO POLISH — intentionally layered on top of styles.css */
+
+:focus-visible{outline:2px solid var(--wine);outline-offset:4px}
+::selection{background:var(--wine);color:#fff}
+
+.site-header{transition:height .28s ease,background .28s ease,box-shadow .28s ease,border-color .28s ease}
+.site-header.is-scrolled{background:rgba(247,242,237,.985);box-shadow:0 12px 35px rgba(23,20,18,.07);border-color:rgba(23,20,18,.06)}
+.desktop-nav a,.footer-grid a,.text-link{transition:color .2s ease,opacity .2s ease,border-color .2s ease}
+.desktop-nav a:hover,.footer-grid a:hover,.text-link:hover{color:var(--wine)}
+
+.btn{position:relative;overflow:hidden;transition:transform .22s ease,background .22s ease,color .22s ease,border-color .22s ease,box-shadow .22s ease}
+.btn:active{transform:translateY(0) scale(.985)}
+.btn-dark:hover{background:var(--wine);border-color:var(--wine);box-shadow:0 9px 24px rgba(108,39,61,.18)}
+.btn-light:hover{background:var(--ink);color:#fff}
+
+.treatment-card,.membership-card,.provider-card,.visit-card,.testimonial,.social-panel,.promo-card{transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.treatment-card{overflow:hidden}
+.treatment-card img{transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .45s ease}
+@media (hover:hover) and (pointer:fine){
+  .treatment-card:hover{transform:translateY(-5px);border-color:#c7bbb3;box-shadow:0 24px 50px rgba(23,20,18,.08)}
+  .treatment-card:hover img{transform:scale(1.035)}
+  .concern-card:hover{transform:translateY(-2px)}
+}
+
+.concept-note{font-size:11px;color:var(--muted);margin-top:-10px;margin-bottom:28px;padding-left:12px;border-left:2px solid var(--rose)}
+.concept-label{display:inline-block;margin-top:16px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.editorial-note blockquote{max-width:520px}
+
+.result-hidden{display:none!important}
+[data-result-card]{transition:opacity .25s ease,transform .25s ease}
+.filter-btn{transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.filter-btn:active{transform:scale(.97)}
+
+.ba-slider{isolation:isolate}
+.ba-slider:before,.ba-slider:after{position:absolute;top:14px;z-index:4;background:rgba(23,20,18,.72);color:#fff;font-size:8px;letter-spacing:.12em;text-transform:uppercase;padding:7px 9px}
+.ba-slider:before{content:'Study A';left:14px}
+.ba-slider:after{content:'Study B';right:14px}
+.ba-handle{z-index:5;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:left .08s linear}
+.ba-divider{z-index:4;transition:left .08s linear}
+.ba-after{transition:clip-path .08s linear}
+
+.finance-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:26px}
+.finance-option{border:1px solid rgba(255,255,255,.28);padding:16px 14px;min-height:92px;display:flex;flex-direction:column;justify-content:space-between;background:rgba(255,255,255,.03)}
+.finance-option strong{font-family:'Playfair Display';font-size:18px;font-weight:500}
+.finance-option span{font-size:9px;letter-spacing:.04em;text-transform:uppercase;color:#a99e97;line-height:1.4}
+
+.gift-card-art{position:absolute;right:2%;top:8%;width:46%;height:84%;min-height:205px;display:grid;place-items:center;perspective:900px}
+.gift-card-envelope{position:absolute;width:88%;height:66%;background:linear-gradient(145deg,#7b3047,#4f1c2d);transform:rotate(-6deg) translate(2%,8%);box-shadow:0 22px 45px rgba(23,20,18,.18)}
+.gift-card-envelope:after{content:'';position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,rgba(255,255,255,.08) 50%,transparent 51%)}
+.gift-card-face{position:relative;width:82%;aspect-ratio:1.62;background:linear-gradient(145deg,#fffdf8,#ede3da);border:1px solid rgba(23,20,18,.12);box-shadow:0 28px 50px rgba(23,20,18,.20);transform:rotate(4deg) translate(-4%,-5%);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gift-card-mark{font-family:'Playfair Display';font-size:clamp(28px,4vw,44px);letter-spacing:.13em}
+.gift-card-face small{font-size:7px;letter-spacing:.45em;margin-top:5px}
+.gift-card-face em{position:absolute;right:14px;bottom:12px;font-style:normal;font-size:7px;letter-spacing:.18em;color:var(--wine)}
+.gift-card-art.large{top:5%;height:90%}
+.gift-page-card{min-height:360px}
+
+.editorial-provider{position:relative;min-height:330px;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.editorial-provider:before{content:'';position:absolute;inset:0;background:linear-gradient(145deg,#fff,#f4ebe6);z-index:0}
+.editorial-provider>*{position:relative;z-index:1}
+.provider-number{position:absolute!important;right:18px;top:6px!important;font-family:'Playfair Display';font-size:108px;line-height:1;color:rgba(108,39,61,.08);letter-spacing:-.06em}
+.editorial-provider h3{font-size:34px;margin:2px 0 10px}
+.editorial-provider p{margin:0 0 16px}
+.provider-tags{display:flex;gap:7px;flex-wrap:wrap}
+.provider-tags span{border:1px solid var(--line);background:rgba(255,255,255,.6);padding:7px 9px;font-size:8px;text-transform:uppercase;letter-spacing:.08em}
+
+.location-art{background:#e9dfd8;position:relative;isolation:isolate}
+.location-grid{position:absolute;inset:-30%;background:
+linear-gradient(90deg,transparent 48%,rgba(23,20,18,.10) 49%,rgba(23,20,18,.10) 51%,transparent 52%),
+linear-gradient(0deg,transparent 48%,rgba(23,20,18,.08) 49%,rgba(23,20,18,.08) 51%,transparent 52%);
+background-size:72px 72px;transform:rotate(-14deg)}
+.location-art:before,.location-art:after{content:'';position:absolute;background:rgba(108,39,61,.15);z-index:1}
+.location-art:before{width:140%;height:8px;left:-20%;top:52%;transform:rotate(-14deg)}
+.location-art:after{height:140%;width:5px;left:58%;top:-20%;transform:rotate(12deg)}
+.location-pin{position:absolute;left:48%;top:42%;z-index:3;transform:translate(-50%,-50%);text-align:center}
+.location-pin span{display:block;width:18px;height:18px;background:var(--wine);border-radius:50% 50% 50% 0;transform:rotate(-45deg);margin:0 auto 8px;box-shadow:0 7px 18px rgba(108,39,61,.25)}
+.location-pin strong,.location-pin small{display:block;background:rgba(255,253,250,.9);padding:3px 6px}
+.location-pin strong{font-family:'Playfair Display';font-size:18px;letter-spacing:.08em}
+.location-pin small{font-size:7px;letter-spacing:.12em}
+.location-street{position:absolute;right:18px;top:18px;z-index:3;font-size:8px;letter-spacing:.22em;color:#5f554f;writing-mode:vertical-rl}
+
+.reveal-ready{opacity:0;transform:translateY(18px)}
+.reveal-ready.is-visible{opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+
+.mobile-menu.open{box-shadow:0 22px 36px rgba(23,20,18,.08)}
+.menu-toggle[aria-expanded="true"] span:not(.sr-only):first-child{transform:translateY(3.5px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:not(.sr-only):nth-child(2){transform:translateY(-3.5px) rotate(-45deg)}
+.menu-toggle span:not(.sr-only){transition:transform .2s ease}
+
+.toast{border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 45px rgba(0,0,0,.22);max-width:min(360px,calc(100vw - 36px))}
+.link-button{background:none;border:0;padding:0;color:inherit}
+
+@media(max-width:900px){
+  .finance-options{grid-template-columns:1fr}
+  .gift-card-art{position:relative;right:auto;top:auto;width:100%;height:auto;min-height:235px;margin-top:18px}
+  .promo-gift .promo-copy{max-width:100%}
+  .gift-page-card{min-height:auto}
+  .editorial-provider{min-height:280px}
+}
+@media(max-width:600px){
+  .finance-copy{padding:46px 26px}
+  .provider-number{font-size:86px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .reveal-ready{opacity:1;transform:none}
+}
